@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
     systemctl mask packagekit
 
     sudo yum update -y
-    sudo yum install -y python3 python-pip zip
+    sudo yum install -y zip
 
     touch /home/vagrant/.bash_aliases
     if ! grep -q PYTHON_ALIAS_ADDED /home/vagrant/.bash_aliases; then
